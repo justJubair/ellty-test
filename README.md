@@ -1,8 +1,49 @@
-# React + Vite
+# Ellty Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- [Live site](https://ellty-test-eight.vercel.app)
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get started with the project, follow the steps below:
+
+### Dependencies
+
+Make sure you have the following dependencies installed:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   https://github.com/justJubair/ellty-test.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd ellty-test
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+   
+### Usage
+
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn run dev
+   ```
+
+2. Open the application in your browser: [http://localhost:5173](http://localhost:5173)

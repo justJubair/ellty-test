@@ -158,6 +158,46 @@ const App = () => {
                   <span className="checkmark"></span>
                 </label>
               </div>
+              <div
+                className="row"
+                style={
+                  checkboxValues.checkbox4
+                    ? { textDecoration: "line-through" }
+                    : {}
+                }
+              >
+                <p>page 4</p>
+
+                <label className="checkbox-container">
+                  <input
+                    type="checkbox"
+                    name="checkbox4"
+                    checked={checkboxValues.checkbox4}
+                    onChange={handleCheckboxChange}
+                  />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
+              <div
+                className="row"
+                style={
+                  checkboxValues.checkbox4
+                    ? { textDecoration: "line-through" }
+                    : {}
+                }
+              >
+                <p>page 4</p>
+
+                <label className="checkbox-container">
+                  <input
+                    type="checkbox"
+                    name="checkbox4"
+                    checked={checkboxValues.checkbox4}
+                    onChange={handleCheckboxChange}
+                  />
+                  <span className="checkmark"></span>
+                </label>
+              </div>
             </div>
 
             <button onClick={handleUnselectAll} type="submit" className={`btn`}>

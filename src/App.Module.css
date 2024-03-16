@@ -113,8 +113,11 @@ p {
   border-radius: 5px;
   margin-top: 22px;
   font-size: 16px;
+  transition: all ease-in-out 0.2s;
 }
 
 .btn:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  background-color: #f0c21c;
 }

@@ -40,7 +40,7 @@ const App = () => {
 
   // handle unselect all the checkoboxes
   const handleUnselectAll = ()=>{
-    if(!checkboxValues.checkbox1 && !checkboxValues.checkbox2 && !checkboxValues.checkbox3 && !checkboxValues.checkbox4){
+    if(!checkboxValues.checkbox1 && !checkboxValues.checkbox2 && !checkboxValues.checkbox3 && !checkboxValues.checkbox4 && !checkboxValues.checkbox5 && !checkboxValues.checkbox6){
       return toast.error("Please select any checkbox")
     }
     const updatedCheckboxValues = {};

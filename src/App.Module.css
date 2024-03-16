@@ -9,13 +9,10 @@
 }
 
 
-
-
-
 .container {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  height: 59vh;
-  width: 65vh;
+  height: 400px;
+  width: 450px;
   border-radius: 10px;
   padding: 20px;
 }
@@ -39,7 +36,7 @@
 
 .row-collection {
   border-bottom: 1px solid rgb(207, 207, 207);
-  height: 300px;
+  height: 250px;
   overflow: auto;
 }
 
@@ -95,10 +92,18 @@ p {
   background-color: #eee;
 }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196f3;
+
+/* Change color for checked odd checkboxes */
+.container input[type="checkbox"].odd-checkbox:checked + .checkmark {
+  background-color: #5087F8;
+  ; 
 }
+
+
+.container input[type="checkbox"].even-checkbox:checked + .checkmark {
+  background-color: #2469F6; 
+}
+
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {

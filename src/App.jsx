@@ -3,6 +3,8 @@ import "./App.Module.css";
 import toast from "react-hot-toast";
 
 const App = () => {
+  
+
   const [selectAll, setSelectAll] = useState(false);
 
   // state to hold the values of multiple checkboxes
@@ -11,6 +13,8 @@ const App = () => {
     checkbox2: false,
     checkbox3: false,
     checkbox4: false,
+    checkbox5: false,
+    checkbox6: false,
   });
 
   // handle select all checkboxs
@@ -65,6 +69,7 @@ const App = () => {
               <label className="checkbox-container">
                 <input
                   type="checkbox"
+                  className="even-checkbox"
                   checked={selectAll}
                   onChange={handleSelectAllChange}
                 />
@@ -89,6 +94,7 @@ const App = () => {
                   <input
                     type="checkbox"
                     name="checkbox1"
+                    className="odd-checkbox"
                     checked={checkboxValues.checkbox1}
                     onChange={handleCheckboxChange}
                   />
@@ -110,6 +116,7 @@ const App = () => {
                   <input
                     type="checkbox"
                     name="checkbox2"
+                    className="even-checkbox"
                     checked={checkboxValues.checkbox2}
                     onChange={handleCheckboxChange}
                   />
@@ -131,6 +138,7 @@ const App = () => {
                   <input
                     type="checkbox"
                     name="checkbox3"
+                    className="odd-checkbox"
                     checked={checkboxValues.checkbox3}
                     onChange={handleCheckboxChange}
                   />
@@ -152,52 +160,58 @@ const App = () => {
                   <input
                     type="checkbox"
                     name="checkbox4"
+                    className="even-checkbox"
                     checked={checkboxValues.checkbox4}
                     onChange={handleCheckboxChange}
                   />
                   <span className="checkmark"></span>
                 </label>
               </div>
+
               <div
                 className="row"
                 style={
-                  checkboxValues.checkbox4
+                  checkboxValues.checkbox5
                     ? { textDecoration: "line-through" }
                     : {}
                 }
               >
-                <p>page 4</p>
+                <p>page 5</p>
 
                 <label className="checkbox-container">
                   <input
                     type="checkbox"
-                    name="checkbox4"
-                    checked={checkboxValues.checkbox4}
+                    name="checkbox5"
+                    className="odd-checkbox"
+                    checked={checkboxValues.checkbox5}
                     onChange={handleCheckboxChange}
                   />
                   <span className="checkmark"></span>
                 </label>
               </div>
+
               <div
                 className="row"
                 style={
-                  checkboxValues.checkbox4
+                  checkboxValues.checkbox6
                     ? { textDecoration: "line-through" }
                     : {}
                 }
               >
-                <p>page 4</p>
+                <p>page 6</p>
 
                 <label className="checkbox-container">
                   <input
                     type="checkbox"
-                    name="checkbox4"
-                    checked={checkboxValues.checkbox4}
+                    name="checkbox6"
+                    className="even-checkbox"
+                    checked={checkboxValues.checkbox6}
                     onChange={handleCheckboxChange}
                   />
                   <span className="checkmark"></span>
                 </label>
               </div>
+              
             </div>
 
             <button onClick={handleUnselectAll} type="submit" className={`btn`}>

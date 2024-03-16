@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.Module.css";
+import toast from "react-hot-toast";
 
 const App = () => {
   const [selectAll, setSelectAll] = useState(false);
@@ -33,13 +34,18 @@ const App = () => {
     });
   };
 
+  // handle unselect all the checkoboxes
   const handleUnselectAll = ()=>{
+    if(!checkboxValues.checkbox1 && !checkboxValues.checkbox2 && !checkboxValues.checkbox3 && !checkboxValues.checkbox4){
+      return toast.error("Please select any checkbox")
+    }
     const updatedCheckboxValues = {};
     for (const key in checkboxValues) {
       updatedCheckboxValues[key] = false;
     }
     setCheckboxValues(updatedCheckboxValues);
     setSelectAll(false)
+    toast.success("Reset")
   }
 
   // handle form submission
